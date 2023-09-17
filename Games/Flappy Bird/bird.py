@@ -65,7 +65,7 @@ game_started = False
 restart_button_image = pygame.image.load("Assets/retry.png")
 restart_button_image = pygame.transform.scale(restart_button_image, (150, 50))
 restart_button_x = (WIDTH - restart_button_image.get_width()) // 2
-restart_button_y = HEIGHT - GROUND_HEIGHT + 10  # Move the restart button to the bottom
+restart_button_y = HEIGHT - GROUND_HEIGHT + 10  
 
 
 countdown_timer = 180  # 3 seconds at 60 FPS
