@@ -4,11 +4,11 @@ import random
 pygame.init()
 
 WIDTH, HEIGHT = 400, 500
-BACKGROUND_COLOR = (224, 255,255)#pygame.transform.scale(pygame.image.load("img/x.png"), (80, 80))
-BUBBLE_COLOR = [(255,182,193)]#pygame.transform.scale(pygame.image.load("img/x.png"), (80, 80))
+BACKGROUND_COLOR = (224, 255,255)
+BUBBLE_COLOR = [(255,182,193)]
 BUBBLE_RADIUS = 30
 BUBBLE_POPPED_COLOR = (255, 0, 0)
-POP_SOUND = pygame.mixer.Sound("assets/pop.wav")  # Replace with a sound file of your choice
+POP_SOUND = pygame.mixer.Sound("assets/pop.wav")
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Bubble Wrap")
