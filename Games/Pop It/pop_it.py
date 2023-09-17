@@ -35,7 +35,7 @@ while running:
                     POP_SOUND.play()
 
  
-    if len(bubbles) < 20:  # You can adjust the number of bubbles on the screen at once
+    if len(bubbles) < 20: 
         create_bubble()
 
  
