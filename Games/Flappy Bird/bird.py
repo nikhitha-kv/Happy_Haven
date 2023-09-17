@@ -106,7 +106,7 @@ def restart_game():
     score = 0
     game_over = False
     game_started = False
-    countdown_timer = 180  # Reset countdown timer
+    countdown_timer = 180 
 
 
 clock = pygame.time.Clock()
@@ -136,7 +136,7 @@ while True:
         if event.type == pygame.MOUSEBUTTONDOWN:
             if not game_started:
                 if not game_over:
-                    # Check if the user clicked the "Start" button
+                   
                     mouse_x, mouse_y = pygame.mouse.get_pos()
                     button_x, button_y = (WIDTH - start_button_image.get_width()) // 2, (HEIGHT - start_button_image.get_height()) // 2
                     button_width, button_height = start_button_image.get_width(), start_button_image.get_height()
@@ -146,7 +146,7 @@ while True:
                     ):
                         game_started = True
                 elif game_over and countdown_timer <= 0:
-                    # Check if the user clicked the "Restart" button when game is over and countdown is done
+                  
                     mouse_x, mouse_y = pygame.mouse.get_pos()
                     button_width, button_height = restart_button_image.get_width(), restart_button_image.get_height()
                     if (
