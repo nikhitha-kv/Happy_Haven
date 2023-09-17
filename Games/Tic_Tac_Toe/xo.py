@@ -5,24 +5,24 @@ import random
 
 pygame.init()
 
-# Screen
+
 WIDTH = 300
 ROWS = 3
 win = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("TicTacToe")
 
-# Colors
+
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (200, 200, 200)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
 
-# Images
+
 X_IMAGE = pygame.transform.scale(pygame.image.load("images/x.png"), (80, 80))
 O_IMAGE = pygame.transform.scale(pygame.image.load("images/o.png"), (80, 80))
 
-# Fonts
+
 END_FONT = pygame.font.SysFont('arial', 40)
 
 def draw_grid():
@@ -217,7 +217,7 @@ def main():
 
             pygame.display.flip()
 
-        # Display the options for a new match or quitting
+     
         if not display_options():
             run = False
 
